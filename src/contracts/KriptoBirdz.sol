@@ -20,6 +20,9 @@ contract KryptoBird is ERC721Connector {
 
 
     }
+    function listOfBirdz() external view returns(string[] memory){
+        return kryptobirdz;
+    }
    
     constructor() ERC721Connector('KryptoBird', 'KBIRDZ') {
         

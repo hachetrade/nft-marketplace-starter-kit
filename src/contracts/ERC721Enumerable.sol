@@ -23,21 +23,48 @@ contract ERC721Enumerable is ERC721 {
     /// @notice Count NFTs tracked by this contract
     /// @return A count of valid NFTs tracked by this contract, where each one of
     ///  them has an assigned and queryable owner not equal to the zero address
-    function totalSupply() external view returns (uint256){
+    function totalSupply() public view returns (uint256){
             return _allTokens.length;
     }
 
    
         
-    function _mint(address addres_to, uint256 tokenId) internal override(ERC721){
-        super._mint(addres_to, tokenId);
-        _addTokensToTotalSupply(tokenId);
+    function _mint(address address_to, uint256 tokenId) internal override(ERC721){
+        super._mint(address_to, tokenId);
+        _addTokensToAllTokenEnumeration(tokenId);
+        _addTokensToOwnerEnumeration(tokenId, address_to);
+
     }
 
-    function _addTokensToTotalSupply(uint256 tokenId) private {
+    function _addTokensToAllTokenEnumeration(uint256 tokenId) private {
+        _allTokensIndex[tokenId] = _allTokens.length;
         _allTokens.push(tokenId);
     }
 
+    function _addTokensToOwnerEnumeration(uint256 tokenId, address address_owner) private {
+       _ownedTokensIndex[tokenId] = _ownedTokens[address_owner].length;
+       _ownedTokens[address_owner].push(tokenId);     
+    }
+
+    function numberOftokensOwned() external view returns(uint256){
+        address owner = msg.sender;
+        return _ownedTokens[owner].length;
+
+    }
+    function tokenByIndex(uint256 index) external view returns(uint256) {
+            require(index < totalSupply(), "global index is out of reach");
+            return _allTokens[index];
+    }
+
+    function tokenOfOwnerByIndex(uint256 index, address owner) external view returns(uint256){
+        require(index< balanceOf(owner), "owner index is out of reach");
+        return _ownedTokens[owner][index];
+
+    }
+    function listOfTokenOwned(address owner) external view returns(uint256[] memory) {
+        return _ownedTokens[owner];
+    }
+    
     
 
 }

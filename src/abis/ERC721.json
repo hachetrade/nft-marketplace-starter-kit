@@ -65,9 +65,9 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"address_from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"address_to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"balanceOf(address)\":{\"details\":\"NFTs assigned to the zero address are considered invalid, and this  function throws for queries about the zero address.\",\"params\":{\"_owner\":\"An address for whom to query the balance\"},\"returns\":{\"_0\":\"The number of NFTs owned by `_owner`, possibly zero\"}},\"ownerOf(uint256)\":{\"details\":\"NFTs assigned to zero address are considered invalid, and queries  about them do throw.\",\"params\":{\"_tokenId\":\"The identifier for an NFT\"},\"returns\":{\"_0\":\"The address of the owner of the NFT\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"balanceOf(address)\":{\"notice\":\"Count all NFTs assigned to an owner\"},\"ownerOf(uint256)\":{\"notice\":\"Find the owner of an NFT\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/src/contracts/ERC721.sol\":\"ERC721\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/src/contracts/ERC721.sol\":{\"keccak256\":\"0x3403bac0d2ddb8848b20d7d56b59c277ecfb92fdaf3fb63e751b8da250825af0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1dafe104dc41f1ae8a6f6f1619517a1ea26807a4c94415bea224ba6144190b41\",\"dweb:/ipfs/QmXYh76io2FkmKUPARWtxPDzhmLVQUYKvitVHtRR8evv5B\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50610280806100206000396000f3fe608060405234801561001057600080fd5b5060043610610052577c010000000000000000000000000000000000000000000000000000000060003504636352211e811461005757806370a0823114610094575b600080fd5b61006a6100653660046101f4565b6100b5565b60405173ffffffffffffffffffffffffffffffffffffffff90911681526020015b60405180910390f35b6100a76100a236600461020d565b61014c565b60405190815260200161008b565b60008181526020819052604081205473ffffffffffffffffffffffffffffffffffffffff1680610146576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820181905260248201527f7468726f77696e6720796f75206675636b696e67206f75742c206d617465203260448201526064015b60405180910390fd5b92915050565b600073ffffffffffffffffffffffffffffffffffffffff82166101cb576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f7468726f77696e6720796f75206675636b696e67206f75742c206d6174650000604482015260640161013d565b5073ffffffffffffffffffffffffffffffffffffffff1660009081526001602052604090205490565b60006020828403121561020657600080fd5b5035919050565b60006020828403121561021f57600080fd5b813573ffffffffffffffffffffffffffffffffffffffff8116811461024357600080fd5b939250505056fea26469706673582212204340aed4fc7dd4a0dad8e8036065f2adc597eb2fddb06efc3b91946e8efed87764736f6c63430008150033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b5060043610610052577c010000000000000000000000000000000000000000000000000000000060003504636352211e811461005757806370a0823114610094575b600080fd5b61006a6100653660046101f4565b6100b5565b60405173ffffffffffffffffffffffffffffffffffffffff90911681526020015b60405180910390f35b6100a76100a236600461020d565b61014c565b60405190815260200161008b565b60008181526020819052604081205473ffffffffffffffffffffffffffffffffffffffff1680610146576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820181905260248201527f7468726f77696e6720796f75206675636b696e67206f75742c206d617465203260448201526064015b60405180910390fd5b92915050565b600073ffffffffffffffffffffffffffffffffffffffff82166101cb576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f7468726f77696e6720796f75206675636b696e67206f75742c206d6174650000604482015260640161013d565b5073ffffffffffffffffffffffffffffffffffffffff1660009081526001602052604090205490565b60006020828403121561020657600080fd5b5035919050565b60006020828403121561021f57600080fd5b813573ffffffffffffffffffffffffffffffffffffffff8116811461024357600080fd5b939250505056fea26469706673582212204340aed4fc7dd4a0dad8e8036065f2adc597eb2fddb06efc3b91946e8efed87764736f6c63430008150033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"address_from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"address_to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"balanceOf(address)\":{\"details\":\"NFTs assigned to the zero address are considered invalid, and this  function throws for queries about the zero address.\",\"params\":{\"_owner\":\"An address for whom to query the balance\"},\"returns\":{\"_0\":\"The number of NFTs owned by `_owner`, possibly zero\"}},\"ownerOf(uint256)\":{\"details\":\"NFTs assigned to zero address are considered invalid, and queries  about them do throw.\",\"params\":{\"_tokenId\":\"The identifier for an NFT\"},\"returns\":{\"_0\":\"The address of the owner of the NFT\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"balanceOf(address)\":{\"notice\":\"Count all NFTs assigned to an owner\"},\"ownerOf(uint256)\":{\"notice\":\"Find the owner of an NFT\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/src/contracts/ERC721.sol\":\"ERC721\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/src/contracts/ERC721.sol\":{\"keccak256\":\"0x3f5820e299890b0e880d926f2bd18d7eb6b09e27a4b422ca8b5120e0f436bd3d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a65acb3865eae0cbf9ef97622cb72c2fd1cd855d40c33537b35a664e03de3fe0\",\"dweb:/ipfs/QmdruByP8uGF7bcgsrFY6HUSxLTVpr4Yr3dZRT4Uk99hVt\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610280806100206000396000f3fe608060405234801561001057600080fd5b5060043610610052577c010000000000000000000000000000000000000000000000000000000060003504636352211e811461005757806370a0823114610094575b600080fd5b61006a6100653660046101f4565b6100b5565b60405173ffffffffffffffffffffffffffffffffffffffff90911681526020015b60405180910390f35b6100a76100a236600461020d565b61014c565b60405190815260200161008b565b60008181526020819052604081205473ffffffffffffffffffffffffffffffffffffffff1680610146576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820181905260248201527f7468726f77696e6720796f75206675636b696e67206f75742c206d617465203260448201526064015b60405180910390fd5b92915050565b600073ffffffffffffffffffffffffffffffffffffffff82166101cb576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f7468726f77696e6720796f75206675636b696e67206f75742c206d6174650000604482015260640161013d565b5073ffffffffffffffffffffffffffffffffffffffff1660009081526001602052604090205490565b60006020828403121561020657600080fd5b5035919050565b60006020828403121561021f57600080fd5b813573ffffffffffffffffffffffffffffffffffffffff8116811461024357600080fd5b939250505056fea2646970667358221220fc6f0c10c6f395f1d91a0da11602277cf1e346e9f8e27414374ced5cbcd7a16764736f6c63430008150033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b5060043610610052577c010000000000000000000000000000000000000000000000000000000060003504636352211e811461005757806370a0823114610094575b600080fd5b61006a6100653660046101f4565b6100b5565b60405173ffffffffffffffffffffffffffffffffffffffff90911681526020015b60405180910390f35b6100a76100a236600461020d565b61014c565b60405190815260200161008b565b60008181526020819052604081205473ffffffffffffffffffffffffffffffffffffffff1680610146576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820181905260248201527f7468726f77696e6720796f75206675636b696e67206f75742c206d617465203260448201526064015b60405180910390fd5b92915050565b600073ffffffffffffffffffffffffffffffffffffffff82166101cb576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f7468726f77696e6720796f75206675636b696e67206f75742c206d6174650000604482015260640161013d565b5073ffffffffffffffffffffffffffffffffffffffff1660009081526001602052604090205490565b60006020828403121561020657600080fd5b5035919050565b60006020828403121561021f57600080fd5b813573ffffffffffffffffffffffffffffffffffffffff8116811461024357600080fd5b939250505056fea2646970667358221220fc6f0c10c6f395f1d91a0da11602277cf1e346e9f8e27414374ced5cbcd7a16764736f6c63430008150033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [
@@ -1197,9 +1197,9 @@
       "name": "#utility.yul"
     }
   ],
-  "sourceMap": "61:1726:0:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "61:1726:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1559:221;;;;;;:::i;:::-;;:::i;:::-;;;375:42:6;363:55;;;345:74;;333:2;318:18;1559:221:0;;;;;;;;1095:191;;;;;;:::i;:::-;;:::i;:::-;;;890:25:6;;;878:2;863:18;1095:191:0;744:177:6;1559:221:0;1617:7;1653:21;;;;;;;;;;;;;;1685:64;;;;;;;1128:2:6;1685:64:0;;;1110:21:6;;;1147:18;;;1140:30;1206:34;1186:18;;;1179:62;1258:18;;1685:64:0;;;;;;;;;1767:5;1559:221;-1:-1:-1;;1559:221:0:o;1095:191::-;1152:7;1180:20;;;1172:63;;;;;;;1489:2:6;1172:63:0;;;1471:21:6;1528:2;1508:18;;;1501:30;1567:32;1547:18;;;1540:60;1617:18;;1172:63:0;1287:354:6;1172:63:0;-1:-1:-1;1253:25:0;;;;;;:17;:25;;;;;;;1095:191::o;14:180:6:-;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;-1:-1:-1;165:23:6;;14:180;-1:-1:-1;14:180:6:o;430:309::-;489:6;542:2;530:9;521:7;517:23;513:32;510:52;;;558:1;555;548:12;510:52;597:9;584:23;647:42;640:5;636:54;629:5;626:65;616:93;;705:1;702;695:12;616:93;728:5;430:309;-1:-1:-1;;;430:309:6:o",
-  "source": "// SPDX-License-Identifier: MIT \r\npragma solidity ^0.8.0;\r\n\r\ncontract ERC721 {\r\n\r\n    event Transfer\r\n    (\r\n        address indexed address_from,\r\n        address indexed address_to,\r\n        uint256 indexed tokenId\r\n    );\r\n\r\n    mapping(uint256 => address) private _tokenOwner;\r\n    mapping(address => uint256) private _OwnedTokensCount;\r\n\r\n    function _mint(address address_to, uint256 tokenId) internal virtual {\r\n        require(address_to != address(0), \"invalid mint address fucket\");\r\n        require(_tokenOwner[tokenId] == address(0), \"you are late mate, token already minted\");\r\n\r\n        _tokenOwner[tokenId] = address_to;\r\n        _OwnedTokensCount[address_to] +=1;\r\n\r\n        emit Transfer(address(0), address_to, tokenId);\r\n    }\r\n    \r\n    \r\n    /// @notice Count all NFTs assigned to an owner\r\n    /// @dev NFTs assigned to the zero address are considered invalid, and this\r\n    ///  function throws for queries about the zero address.\r\n    /// @param _owner An address for whom to query the balance\r\n    /// @return The number of NFTs owned by `_owner`, possibly zero\r\n\r\n    function balanceOf(address _owner) external view returns(uint256) {\r\n        require(_owner != address(0), \"throwing you fucking out, mate\");\r\n        return _OwnedTokensCount[_owner];\r\n    }\r\n\r\n\r\n\r\n    /// @notice Find the owner of an NFT\r\n    /// @dev NFTs assigned to zero address are considered invalid, and queries\r\n    ///  about them do throw.\r\n    /// @param _tokenId The identifier for an NFT\r\n    /// @return The address of the owner of the NFT\r\n\r\n\r\n    function ownerOf(uint256 _tokenId) external view returns (address) {\r\n        address owner = _tokenOwner[_tokenId];\r\n        require(owner != address(0), \"throwing you fucking out, mate 2\");\r\n        return owner;\r\n    }\r\n\r\n\r\n}\r\n\r\n",
+  "sourceMap": "61:1724:0:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "61:1724:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1557:221;;;;;;:::i;:::-;;:::i;:::-;;;375:42:6;363:55;;;345:74;;333:2;318:18;1557:221:0;;;;;;;;1095:189;;;;;;:::i;:::-;;:::i;:::-;;;890:25:6;;;878:2;863:18;1095:189:0;744:177:6;1557:221:0;1615:7;1651:21;;;;;;;;;;;;;;1683:64;;;;;;;1128:2:6;1683:64:0;;;1110:21:6;;;1147:18;;;1140:30;1206:34;1186:18;;;1179:62;1258:18;;1683:64:0;;;;;;;;;1765:5;1557:221;-1:-1:-1;;1557:221:0:o;1095:189::-;1150:7;1178:20;;;1170:63;;;;;;;1489:2:6;1170:63:0;;;1471:21:6;1528:2;1508:18;;;1501:30;1567:32;1547:18;;;1540:60;1617:18;;1170:63:0;1287:354:6;1170:63:0;-1:-1:-1;1251:25:0;;;;;;:17;:25;;;;;;;1095:189::o;14:180:6:-;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;-1:-1:-1;165:23:6;;14:180;-1:-1:-1;14:180:6:o;430:309::-;489:6;542:2;530:9;521:7;517:23;513:32;510:52;;;558:1;555;548:12;510:52;597:9;584:23;647:42;640:5;636:54;629:5;626:65;616:93;;705:1;702;695:12;616:93;728:5;430:309;-1:-1:-1;;;430:309:6:o",
+  "source": "// SPDX-License-Identifier: MIT \r\npragma solidity ^0.8.0;\r\n\r\ncontract ERC721 {\r\n\r\n    event Transfer\r\n    (\r\n        address indexed address_from,\r\n        address indexed address_to,\r\n        uint256 indexed tokenId\r\n    );\r\n\r\n    mapping(uint256 => address) private _tokenOwner;\r\n    mapping(address => uint256) private _OwnedTokensCount;\r\n\r\n    function _mint(address address_to, uint256 tokenId) internal virtual {\r\n        require(address_to != address(0), \"invalid mint address fucket\");\r\n        require(_tokenOwner[tokenId] == address(0), \"you are late mate, token already minted\");\r\n\r\n        _tokenOwner[tokenId] = address_to;\r\n        _OwnedTokensCount[address_to] +=1;\r\n\r\n        emit Transfer(address(0), address_to, tokenId);\r\n    }\r\n    \r\n    \r\n    /// @notice Count all NFTs assigned to an owner\r\n    /// @dev NFTs assigned to the zero address are considered invalid, and this\r\n    ///  function throws for queries about the zero address.\r\n    /// @param _owner An address for whom to query the balance\r\n    /// @return The number of NFTs owned by `_owner`, possibly zero\r\n\r\n    function balanceOf(address _owner) public view returns(uint256) {\r\n        require(_owner != address(0), \"throwing you fucking out, mate\");\r\n        return _OwnedTokensCount[_owner];\r\n    }\r\n\r\n\r\n\r\n    /// @notice Find the owner of an NFT\r\n    /// @dev NFTs assigned to zero address are considered invalid, and queries\r\n    ///  about them do throw.\r\n    /// @param _tokenId The identifier for an NFT\r\n    /// @return The address of the owner of the NFT\r\n\r\n\r\n    function ownerOf(uint256 _tokenId) external view returns (address) {\r\n        address owner = _tokenOwner[_tokenId];\r\n        require(owner != address(0), \"throwing you fucking out, mate 2\");\r\n        return owner;\r\n    }\r\n\r\n\r\n}\r\n\r\n",
   "sourcePath": "C:\\Users\\hector\\OneDrive\\Escritorio\\nft_marketplace repo\\nft-marketplace-starter-kit\\src\\contracts\\ERC721.sol",
   "ast": {
     "absolutePath": "project:/src/contracts/ERC721.sol",
@@ -2146,7 +2146,7 @@
             "body": {
               "id": 90,
               "nodeType": "Block",
-              "src": "1161:125:0",
+              "src": "1159:125:0",
               "statements": [
                 {
                   "expression": {
@@ -2167,7 +2167,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 71,
-                          "src": "1180:6:0",
+                          "src": "1178:6:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -2186,7 +2186,7 @@
                               "kind": "number",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "1198:1:0",
+                              "src": "1196:1:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_rational_0_by_1",
                                 "typeString": "int_const 0"
@@ -2207,7 +2207,7 @@
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "1190:7:0",
+                            "src": "1188:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
@@ -2216,7 +2216,7 @@
                               "id": 78,
                               "name": "address",
                               "nodeType": "ElementaryTypeName",
-                              "src": "1190:7:0",
+                              "src": "1188:7:0",
                               "typeDescriptions": {}
                             }
                           },
@@ -2229,14 +2229,14 @@
                           "nameLocations": [],
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "1190:10:0",
+                          "src": "1188:10:0",
                           "tryCall": false,
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
                           }
                         },
-                        "src": "1180:20:0",
+                        "src": "1178:20:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -2251,7 +2251,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1202:32:0",
+                        "src": "1200:32:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_91a5015ec638e0db8011a4da71788e6473fcce9b45fa2e4994ed0b0992fac4a7",
                           "typeString": "literal_string \"throwing you fucking out, mate\""
@@ -2278,7 +2278,7 @@
                         4294967278
                       ],
                       "referencedDeclaration": 4294967278,
-                      "src": "1172:7:0",
+                      "src": "1170:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
@@ -2293,7 +2293,7 @@
                     "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1172:63:0",
+                    "src": "1170:63:0",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
@@ -2302,7 +2302,7 @@
                   },
                   "id": 85,
                   "nodeType": "ExpressionStatement",
-                  "src": "1172:63:0"
+                  "src": "1170:63:0"
                 },
                 {
                   "expression": {
@@ -2312,7 +2312,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 17,
-                      "src": "1253:17:0",
+                      "src": "1251:17:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
                         "typeString": "mapping(address => uint256)"
@@ -2325,7 +2325,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 71,
-                      "src": "1271:6:0",
+                      "src": "1269:6:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -2336,7 +2336,7 @@
                     "isPure": false,
                     "lValueRequested": false,
                     "nodeType": "IndexAccess",
-                    "src": "1253:25:0",
+                    "src": "1251:25:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2345,7 +2345,7 @@
                   "functionReturnParameters": 75,
                   "id": 89,
                   "nodeType": "Return",
-                  "src": "1246:32:0"
+                  "src": "1244:32:0"
                 }
               ]
             },
@@ -2410,7 +2410,7 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 91,
-                  "src": "1152:7:0",
+                  "src": "1150:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2421,7 +2421,7 @@
                     "id": 73,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1152:7:0",
+                    "src": "1150:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2430,19 +2430,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1151:9:0"
+              "src": "1149:9:0"
             },
             "scope": 119,
-            "src": "1095:191:0",
+            "src": "1095:189:0",
             "stateMutability": "view",
             "virtual": false,
-            "visibility": "external"
+            "visibility": "public"
           },
           {
             "body": {
               "id": 117,
               "nodeType": "Block",
-              "src": "1626:154:0",
+              "src": "1624:154:0",
               "statements": [
                 {
                   "assignments": [
@@ -2454,10 +2454,10 @@
                       "id": 100,
                       "mutability": "mutable",
                       "name": "owner",
-                      "nameLocation": "1645:5:0",
+                      "nameLocation": "1643:5:0",
                       "nodeType": "VariableDeclaration",
                       "scope": 117,
-                      "src": "1637:13:0",
+                      "src": "1635:13:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -2468,7 +2468,7 @@
                         "id": 99,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
-                        "src": "1637:7:0",
+                        "src": "1635:7:0",
                         "stateMutability": "nonpayable",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -2486,7 +2486,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 13,
-                      "src": "1653:11:0",
+                      "src": "1651:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_uint256_$_t_address_$",
                         "typeString": "mapping(uint256 => address)"
@@ -2499,7 +2499,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 94,
-                      "src": "1665:8:0",
+                      "src": "1663:8:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -2510,14 +2510,14 @@
                     "isPure": false,
                     "lValueRequested": false,
                     "nodeType": "IndexAccess",
-                    "src": "1653:21:0",
+                    "src": "1651:21:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "1637:37:0"
+                  "src": "1635:37:0"
                 },
                 {
                   "expression": {
@@ -2538,7 +2538,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 100,
-                          "src": "1693:5:0",
+                          "src": "1691:5:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -2557,7 +2557,7 @@
                               "kind": "number",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "1710:1:0",
+                              "src": "1708:1:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_rational_0_by_1",
                                 "typeString": "int_const 0"
@@ -2578,7 +2578,7 @@
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "1702:7:0",
+                            "src": "1700:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
@@ -2587,7 +2587,7 @@
                               "id": 107,
                               "name": "address",
                               "nodeType": "ElementaryTypeName",
-                              "src": "1702:7:0",
+                              "src": "1700:7:0",
                               "typeDescriptions": {}
                             }
                           },
@@ -2600,14 +2600,14 @@
                           "nameLocations": [],
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "1702:10:0",
+                          "src": "1700:10:0",
                           "tryCall": false,
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
                           }
                         },
-                        "src": "1693:19:0",
+                        "src": "1691:19:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -2622,7 +2622,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1714:34:0",
+                        "src": "1712:34:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_5be4f4ab89f5275c38d0357877e2ec277bcf64481192cac745844ff1050a30df",
                           "typeString": "literal_string \"throwing you fucking out, mate 2\""
@@ -2649,7 +2649,7 @@
                         4294967278
                       ],
                       "referencedDeclaration": 4294967278,
-                      "src": "1685:7:0",
+                      "src": "1683:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
@@ -2664,7 +2664,7 @@
                     "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1685:64:0",
+                    "src": "1683:64:0",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
@@ -2673,7 +2673,7 @@
                   },
                   "id": 114,
                   "nodeType": "ExpressionStatement",
-                  "src": "1685:64:0"
+                  "src": "1683:64:0"
                 },
                 {
                   "expression": {
@@ -2682,7 +2682,7 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 100,
-                    "src": "1767:5:0",
+                    "src": "1765:5:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -2691,14 +2691,14 @@
                   "functionReturnParameters": 98,
                   "id": 116,
                   "nodeType": "Return",
-                  "src": "1760:12:0"
+                  "src": "1758:12:0"
                 }
               ]
             },
             "documentation": {
               "id": 92,
               "nodeType": "StructuredDocumentation",
-              "src": "1298:253:0",
+              "src": "1296:253:0",
               "text": "@notice Find the owner of an NFT\n @dev NFTs assigned to zero address are considered invalid, and queries\n  about them do throw.\n @param _tokenId The identifier for an NFT\n @return The address of the owner of the NFT"
             },
             "functionSelector": "6352211e",
@@ -2707,7 +2707,7 @@
             "kind": "function",
             "modifiers": [],
             "name": "ownerOf",
-            "nameLocation": "1568:7:0",
+            "nameLocation": "1566:7:0",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 95,
@@ -2718,10 +2718,10 @@
                   "id": 94,
                   "mutability": "mutable",
                   "name": "_tokenId",
-                  "nameLocation": "1584:8:0",
+                  "nameLocation": "1582:8:0",
                   "nodeType": "VariableDeclaration",
                   "scope": 118,
-                  "src": "1576:16:0",
+                  "src": "1574:16:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2732,7 +2732,7 @@
                     "id": 93,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1576:7:0",
+                    "src": "1574:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2741,7 +2741,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1575:18:0"
+              "src": "1573:18:0"
             },
             "returnParameters": {
               "id": 98,
@@ -2755,7 +2755,7 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 118,
-                  "src": "1617:7:0",
+                  "src": "1615:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2766,7 +2766,7 @@
                     "id": 96,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1617:7:0",
+                    "src": "1615:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2776,24 +2776,24 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1616:9:0"
+              "src": "1614:9:0"
             },
             "scope": 119,
-            "src": "1559:221:0",
+            "src": "1557:221:0",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
         "scope": 120,
-        "src": "61:1726:0",
+        "src": "61:1724:0",
         "usedErrors": [],
         "usedEvents": [
           9
         ]
       }
     ],
-    "src": "34:1757:0"
+    "src": "34:1755:0"
   },
   "compiler": {
     "name": "solc",
@@ -2801,7 +2801,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.14",
-  "updatedAt": "2023-07-29T09:04:29.754Z",
+  "updatedAt": "2023-07-29T14:58:58.613Z",
   "devdoc": {
     "kind": "dev",
     "methods": {
