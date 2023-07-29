@@ -61,7 +61,7 @@ contract ERC721 {
 
     }
 
-    function transferFrom(address _to, address _from, uint256 _tokenId) public {
+    function transferFrom(address _from, address _to, uint256 _tokenId) public {
         _transferFrom(_from, _to, _tokenId);
     }
 
